@@ -25,5 +25,4 @@ let rideup1 = new Rides();
 rideup1.start();
 let rideup2 = new Rides();
 rideup2.start();
-console.log(Rides.activeRides); //O/P: 1
-console.log(Rides.activeRides); //O/P: 1
+console.log(Rides.activeRides); //O/P: 2

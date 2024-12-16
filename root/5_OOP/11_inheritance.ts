@@ -7,7 +7,9 @@ class Person{
         return this.firstName+' '+this.lastName;
     }
 
-    walk(){
+    //#14- Protected class:
+    private privatewalk(){ }//can only be accessed within the class
+    protected walk(){ //can only be accessed within the class & the classes that inherits.
         console.log("Can walk");
         
     }
@@ -20,7 +22,11 @@ class Student extends Person {
     }
     takeTest(){
         console.log("Taking a Test");
+        //#14- Protected members:
+        // this.privatewalk(); // Error: Property 'privatewalk' is private and only accessible within class 'Person'.ts(2341)
+        this.walk();
     }
+    
 }
 //#12-Method overriding
 class Teacher extends Person {

@@ -1,0 +1,18 @@
+abstract class Shape {
+  // Abstract methods don't have a body
+  constructor(public color: string) {}
+  abstract render();
+}
+class Circle extends Shape {
+  constructor(public radius: number, color: string) {
+    super(color);
+  }
+  override render() {
+    console.log("Rendering a circle");
+  }
+}
+
+
+// let shape =new Shape('red');//Cannot create an instance of an abstract class.ts(2511)
+let shape =new Circle(10,'red');//Cannot create an instance of an abstract class.ts(2511)
+shape.render();

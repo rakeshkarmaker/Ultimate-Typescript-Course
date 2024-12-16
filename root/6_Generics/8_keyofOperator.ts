@@ -24,4 +24,4 @@ let store = new Stores<Products>();
 store.add({name:'a', price:100});
 store.find('name',100);
 store.find('price',100);
-store.find('nonExistingProperty',100);
+// store.find('nonExistingProperty',100);
